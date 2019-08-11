@@ -1,0 +1,48 @@
+<p>home works!</p>
+
+<img src="assets/image/1.png" alt="">
+<!-- <img [src]="src" alt=""> -->
+
+<hr>
+
+<ul>
+  <ol *ngFor="let item of list;let key=index">{{key}}---{{item}}</ol>
+</ul>
+
+<hr>
+
+<img src="assets/image/1.png" alt="" *ngIf="flag">
+
+<img src="assets/image/08.png" alt="" *ngIf="!flag">
+
+<hr>
+
+<div [ngClass]="{'red': flag, 'blue': !flag}"> this is class</div>
+
+
+<hr>
+
+<div>{{date | date: 'yyy-MM-dd HH:mm:ss'}}</div>
+
+
+<hr>
+
+
+<button (click)="run()">button</button>
+
+<button (click)="getdata()">getdata</button>
+
+<hr>
+
+<button (click)="setData()">setData</button>
+
+<hr>
+
+<input type="text" (keydown)="keyDown($event)">
+
+
+<hr>
+
+<input type="text" [(ngModel)]="keyworld">
+
+{{keyworld}}

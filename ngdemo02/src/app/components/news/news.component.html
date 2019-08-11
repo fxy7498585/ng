@@ -1,0 +1,43 @@
+<p>news works!</p>
+{{title}}
+{{msg}}
+{{username}}
+{{age}}
+{{address}}
+<hr>
+{{userinfo.name}}
+<hr>
+{{id}}
+
+<hr>
+
+<div title="鼠标移上去">
+  鼠标移上去
+</div>
+
+<hr>
+
+
+<div [title]="userinfo.name">
+  username
+</div>
+
+
+<hr>
+
+<div [innerHTML]="content">
+</div>
+
+
+<hr>
+
+<div>
+  {{1+2}}
+</div>
+
+
+<hr>
+
+<ol>
+  <li *ngFor="let item of arr">{{item}}</li>
+</ol>
